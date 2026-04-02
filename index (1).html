@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Dwi Aulia | TJKT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family:'Inter',sans-serif;
+      background:linear-gradient(145deg,#f8fafc,#eef2f5);
+      color:#1e293b;
+      padding:2rem 1.5rem;
+    }
+    .container {
+      max-width:1100px;
+      margin:0 auto;
+      background:rgba(255,255,255,0.92);
+      border-radius:2rem;
+      box-shadow:0 20px 35px -12px rgba(0,0,0,0.1);
+      overflow:hidden;
+    }
+    .hero {
+      background:linear-gradient(135deg,#0f172a,#1e293b);
+      padding:3rem 2rem;
+      text-align:center;
+      color:white;
+    }
+    .avatar {
+      width:130px;
+      height:130px;
+      background:linear-gradient(120deg,#38bdf8,#818cf8);
+      border-radius:50%;
+      margin:0 auto 1.2rem;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 15px 30px -10px rgba(0,0,0,0.3);
+      border:3px solid rgba(255,255,255,0.3);
+    }
+    .avatar i { font-size:4.2rem; color:white; }
+    .hero h1 { font-size:2.2rem; margin-bottom:0.5rem; }
+    .hero .tagline {
+      background:rgba(255,255,255,0.12);
+      display:inline-block;
+      padding:0.3rem 1rem;
+      border-radius:40px;
+      font-size:1.1rem;
+    }
+    .hero .desc { max-width:550px; margin:1.2rem auto 0; font-size:0.95rem; color:#e2e8f0; }
+    .content { padding:2rem; }
+    .grid-2 {
+      display:grid;
+      grid-template-columns:1fr 1.2fr;
+      gap:2rem;
+      margin-bottom:2rem;
+    }
+    @media (max-width:700px) { .grid-2 { grid-template-columns:1fr; } .content { padding:1.5rem; } }
+    .card {
+      background:white;
+      border-radius:1.5rem;
+      padding:1.5rem;
+      border:1px solid rgba(203,213,225,0.4);
+    }
+    .card-title {
+      font-size:1.4rem;
+      font-weight:600;
+      margin-bottom:1.2rem;
+      display:flex;
+      align-items:center;
+      gap:0.6rem;
+      border-left:4px solid #3b82f6;
+      padding-left:0.8rem;
+    }
+    .card-title i { color:#3b82f6; }
+    .info-list { list-style:none; }
+    .info-list li {
+      display:flex;
+      align-items:baseline;
+      gap:0.75rem;
+      padding-bottom:0.7rem;
+      margin-bottom:0.7rem;
+      border-bottom:1px dashed #e9edf2;
+      font-size:0.95rem;
+    }
+    .info-list li:last-child { border-bottom:none; }
+    .info-list li i { width:24px; color:#3b82f6; }
+    .info-list strong { min-width:85px; }
+    .skill-tags {
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.6rem;
+      margin-top:0.5rem;
+      margin-bottom:1rem;
+    }
+    .skill-tags span {
+      background:#f1f5f9;
+      padding:0.4rem 1rem;
+      border-radius:40px;
+      font-size:0.85rem;
+      border:1px solid #e2e8f0;
+    }
+    .btn-contact {
+      display:inline-block;
+      background:#0f172a;
+      color:white;
+      padding:0.7rem 1.8rem;
+      border-radius:40px;
+      text-decoration:none;
+      font-weight:600;
+      margin-top:0.8rem;
+    }
+    .btn-contact:hover { background:#1e293b; }
+    .text-center { text-align:center; }
+    .social-links {
+      display:flex;
+      justify-content:center;
+      gap:1.5rem;
+      margin:2rem 0 0.5rem;
+    }
+    .social-icon {
+      background:#f1f5f9;
+      width:46px;
+      height:46px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      font-size:1.5rem;
+      color:#1e293b;
+      text-decoration:none;
+      transition:0.2s;
+    }
+    .social-icon:hover { background:#0f172a; color:white; transform:scale(1.05); }
+    .footer {
+      background:#f8fafc;
+      border-top:1px solid #e2edf2;
+      padding:1rem;
+      text-align:center;
+      font-size:0.8rem;
+    }
+    .mt-2 { margin-top:1rem; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <div class="avatar"><i class="fas fa-user-astronaut"></i></div>
+    <h1>Nova Dwi Aulia</h1>
+    <div class="tagline"><i class="fas fa-network-wired"></i> Siswa TJKT</div>
+    <p class="desc">Belajar jaringan komputer, telekomunikasi, dan pengembangan web.</p>
+  </div>
+  <div class="content">
+    <div class="grid-2">
+      <!-- KIRI: Biodata -->
+      <div class="card">
+        <div class="card-title"><i class="fas fa-id-card"></i> Biodata</div>
+        <ul class="info-list">
+          <li><i class="fas fa-user"></i> <strong>Nama</strong> <span>Nova Dwi Aulia</span></li>
+          <li><i class="fas fa-calendar-alt"></i> <strong>Tgl Lahir</strong> <span>06 November 2009</span></li>
+          <li><i class="fas fa-map-marker-alt"></i> <strong>Domisili</strong> <span>Cilacap, Jateng</span></li>
+          <li><i class="fas fa-envelope"></i> <strong>Email</strong> <span>novadwiaulia18@gmail.com</span></li>
+          <li><i class="fas fa-phone-alt"></i> <strong>Telepon</strong> <span>+62 858 6618 5414</span></li>
+        </ul>
+        <div class="text-center"><a href="#" class="btn-contact" id="contactBtn"><i class="fas fa-paper-plane"></i> Hubungi Saya</a></div>
+      </div>
+
+      <!-- KANAN: Keahlian > PENDIDIKAN > Musik Favorit (urutan sudah benar) -->
+      <div class="card">
+        <div class="card-title"><i class="fas fa-code-branch"></i> Keahlian & Tools</div>
+        <div class="skill-tags">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          <span>Cisco Packet Tracer</span><span>MikroTik</span>
+          <span>Git & GitHub</span><span>Responsive Design</span>
+        </div>
+
+        <!-- PENDIDIKAN (DI ATAS MUSIK FAVORIT) -->
+        <div class="card-title mt-2"><i class="fas fa-graduation-cap"></i> Pendidikan</div>
+        <div class="skill-tags">
+          <span>🎓 MI MA'ARIF NU Cimanggu</span>
+          <span>📚 MTS MA'ARIF NU Cimanggu</span>
+          <span>🏫 SMK KOMPUTAMA Majenang</span>
+        </div>
+
+        <!-- MUSIK FAVORIT (TETAP ADA, DI BAWAH PENDIDIKAN) -->
+        <div class="card-title mt-2"><i class="fas fa-headphones"></i> Musik Favorit</div>
+        <div class="skill-tags">
+          <span>🎸 Pop</span><span>🎤 Tulus</span><span>🎤 Pamungkas</span>
+          <span>🎤 Virgoun</span><span>🎵 Sheila On 7</span>
+          <span>🎵 Nadif Basalammah</span><span>🎶 Hindia</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tentang Saya -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-user-edit"></i> Tentang Saya</div>
+      <p>Halo! Saya Nova, pelajar di SMK KOMPUTAMA Majenang.</p>
+      <p>Saya siswa kelas X jurusan <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong>. Saya tertarik pada jaringan, server, dan web development. ✨</p>
+    </div>
+
+    <div class="social-links">
+      <a href="#" class="social-icon" id="github"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-icon" id="linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="social-icon" id="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon" id="twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+  <div class="footer"><i class="far fa-copyright"></i> 2026 Nova Dwi Aulia — Portofolio TJKT</div>
+</div>
+<script>
+  document.getElementById('contactBtn')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert("📧 Email: novadwiaulia18@gmail.com\n📞 WhatsApp: +62 858 6618 5414");
+  });
+  ['github','linkedin','instagram','twitter'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el) el.addEventListener('click', (e) => { e.preventDefault(); alert("🔗 Ganti link dengan profil asli kamu."); });
+  });
+</script>
+</body>
+</html>
